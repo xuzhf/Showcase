@@ -16,24 +16,23 @@
 
 package com.smartgwt.sample.showcase.client;
 
-import com.smartgwt.client.util.SC;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import com.smartgwt.client.types.SelectionStyle;
 import com.smartgwt.client.types.SortArrow;
 import com.smartgwt.client.types.TreeModelType;
 import com.smartgwt.client.util.Browser;
+import com.smartgwt.client.util.SC;
 import com.smartgwt.client.widgets.tree.Tree;
-import com.smartgwt.client.widgets.tree.TreeNode;
 import com.smartgwt.client.widgets.tree.TreeGrid;
 import com.smartgwt.client.widgets.tree.TreeGridField;
+import com.smartgwt.client.widgets.tree.TreeNode;
 import com.smartgwt.sample.showcase.client.data.ExplorerTreeNode;
 import com.smartgwt.sample.showcase.client.data.FolderTreeNode;
 import com.smartgwt.sample.showcase.client.data.ShowcaseData;
-
-import java.util.Map;
-import java.util.List;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class SideNavTree extends TreeGrid {
 

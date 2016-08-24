@@ -153,6 +153,7 @@ import com.smartgwt.sample.showcase.client.grid.GridNestedFilterBulderSample;
 import com.smartgwt.sample.showcase.client.grid.GridSummariesInHeaderSample;
 import com.smartgwt.sample.showcase.client.grid.GridSummariesSample;
 import com.smartgwt.sample.showcase.client.grid.LiveGridFetchSample;
+import com.smartgwt.sample.showcase.client.grid.TestSample;
 import com.smartgwt.sample.showcase.client.grid.appearance.AlternateRecordStyleSample;
 import com.smartgwt.sample.showcase.client.grid.appearance.AnimatedSelectionSample;
 import com.smartgwt.sample.showcase.client.grid.appearance.CellStylesSample;
@@ -375,21 +376,22 @@ public class ShowcaseData {
         if (data == null) {
             data = new ArrayList<ExplorerTreeNode>();
             data.addAll(Arrays.asList(new ExplorerTreeNode[] {
-                    new ExplorerTreeNode(M.homeNodeName(), " ◊“≥", "root", "silk/house.png", null, true, idSuffix),
+                    new ExplorerTreeNode(M.homeNodeName(), "È¶ñÈ°µ", "root", "silk/house.png", null, true, idSuffix),
                     new ExplorerTreeNode("Featured Samples", "featured-category", "root", "pieces/16/cube_green.png", null, true, idSuffix),
                     // this is a shortcut to "New samples in XX"
                     new ExplorerTreeNode("New Samples in " + getNewSamplesSuffix(), "new-category-fs", "featured-category", "silk/new.png", null, true, idSuffix),
                     new ExplorerTreeNode("Demo Application", "featured-complete-app", "featured-category", "silk/layout_content.png", new MiniAppSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Smart GWT MVC", "featured-smartgwt-mvc", "featured-category", "silk/arrow_join.png", new TreeEditingSample.Factory(), true, idSuffix),
-                    new ExplorerTreeNode("µ•‘™∏Ò◊Èº˛", "featured-grid-cell-widgets", "featured-category", null, new GridCellWidgetsSample.Factory(), true, idSuffix),
+                    new ExplorerTreeNode("ÂçïÂÖÉÊ†ºÁªÑ‰ª∂", "featured-grid-cell-widgets", "featured-category", null, new GridCellWidgetsSample.Factory(), true, idSuffix),
+                    new ExplorerTreeNode("ÊµãËØïÈ°µÈù¢", "test-widgets", "featured-category", null, new TestSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Miller Columns", "featured-miller-columns", "featured-category", "silk/ipod.png", new MillerColumnsSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Nested Grid", "featured-nested-grid", "featured-category", "crystal/16/mimetypes/widget_doc.png", new GridRowExpansionRelatedRecordsSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Tile Sort &amp; Filtering", "featured-tile-filtering", "featured-category", "silk/application_view_tile.png", new FilterSortTilingSample.Factory(), true, idSuffix),
-                    new ExplorerTreeNode("¥Ú”°±Ì∏Ò", "featured-print-grid", "featured-category", "silk/printer.png", new PrintingSample.Factory(), true, idSuffix),
+                    new ExplorerTreeNode("ÊâìÂç∞Ë°®Ê†º", "featured-print-grid", "featured-category", "silk/printer.png", new PrintingSample.Factory(), true, idSuffix),
 
                     // Disabled for now. We don't want to expose this folder until we have a certain number of samples complete.
-                    new ExplorerTreeNode("“∆∂Ø¿˝◊”", "mobile", "root", "silk/phone.png", null, true, idSuffix),   
-                    new ExplorerTreeNode("œÏ”¶ Ω…Ëº∆", "responsive-design", "mobile", "silk/calendar.png", new ResponsiveDesign.Factory(), false, idSuffix, "5.0"),
+                    new ExplorerTreeNode("ÁßªÂä®‰æãÂ≠ê", "mobile", "root", "silk/phone.png", null, true, idSuffix),   
+                    new ExplorerTreeNode("ÂìçÂ∫îÂºèËÆæËÆ°", "responsive-design", "mobile", "silk/calendar.png", new ResponsiveDesign.Factory(), false, idSuffix, "5.0"),
                     new ExplorerTreeNode("Dialing", "dialing", "mobile", "silk/phone.png", new DialingSample.Factory(), false, idSuffix, "5.0"),
                     new FolderTreeNode("Adaptive UI", "adaptive-ui-ms", "mobile", "silk/phone.png", true, idSuffix) {{
                             setDescription(
@@ -425,7 +427,7 @@ public class ShowcaseData {
 
                     new ExplorerTreeNode("Adv. Filter Builder", "featured-filter-builder-grid", "featured-category", "crystal/oo/sc_insertformula.png", new GridNestedFilterBulderSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Frozen Columns", "featured-tree-grid", "featured-category", "silk/chart_organisation.png", new FrozenColumnsSample.Factory(), true, idSuffix),
-                    new ExplorerTreeNode("±ÌÕ∑¿©’π", "featured-grid-header-span", "featured-category", null, new GridHeaderSpansSample.Factory(), true, idSuffix),
+                    new ExplorerTreeNode("Ë°®Â§¥Êâ©Â±ï", "featured-grid-header-span", "featured-category", null, new GridHeaderSpansSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Live Grid", "featured-grid-live", "featured-category", "silk/application_put.png", new LiveGridFetchSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Vertical Tabs", "featured-vertical-tabs", "featured-category", "silk/tab.png", new OrientationSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Databound Calendar", "featured-databound-calendar-category", "featured-category", "crystal/16/apps/cal.png", new DataBoundCalendarSample.Factory(), true, idSuffix),
@@ -441,7 +443,7 @@ public class ShowcaseData {
                     new ExplorerTreeNode("Databound Dragging", "grid-db-dragging-featured-category", "featured-category", "silk/database_link.png", new GridDataBoundDragDropSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Adaptive Filter", "grid-adaptive-filter-featured-category", "featured-category", "silk/funnel.png", new AdaptiveFilterSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Formula &amp; Summary Builder", "formula-sumamry-builder-featured-category", "featured-category", "crystal/oo/sc_insertformula.png", new FormulaSummaryBuilderSample.Factory(), true, idSuffix),
-                    new ExplorerTreeNode("±Ì∏Ò«Û∫Õ", "grid-summaries-featured-category", "featured-category", "crystal/16/apps/tooloptions.png", new GridSummariesSample.Factory(), true, idSuffix),
+                    new ExplorerTreeNode("Ë°®Ê†ºÊ±ÇÂíå", "grid-summaries-featured-category", "featured-category", "crystal/16/apps/tooloptions.png", new GridSummariesSample.Factory(), true, idSuffix),
                     new ExplorerTreeNode("Offline Preferences", "grid-offline-pref-featured-category", "featured-category", "crystal/16/apps/tooloptions.png", new OfflinePreferencesSample.Factory(), true, idSuffix),
 
                     // New samples since previous release

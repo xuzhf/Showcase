@@ -64,5 +64,5 @@
         <extend-property name="locale" values="uk_AU"/>    
         <extend-property name="locale" values="sv_SE"/>    
     -->
-
+<extend-property name="locale" values="zh_CN"/>
 </module>
