@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='study5'>
+
+  <inherits name="com.smartgwt.SmartGwt" />
+  
+
+  
+  
+  <entry-point class='com.test.client.EmployeeInfo'/>
+
+
+  <extend-property name="locale" values="zh_CN"/>
+  
+  
+    <source path='client'/>
+    <source path='shared'/>
+
+</module>
