@@ -2,7 +2,7 @@ package com.smartgwt.sample.showcase.service;
 
 import java.sql.Connection;
 
-
+import org.slf4j.Logger;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,10 +15,10 @@ import org.json.JSONObject;
 
 import com.smartgwt.sample.showcase.dao.pojo.Information;
 import com.smartgwt.sample.showcase.util.DB;
-
+import com.smartgwt.sample.showcase.util.JobLogFactory;
 
 public class InformationListService {
-	
+	Logger logger = JobLogFactory.createLogger(InformationListService.class.getName());
 	public static void main(String[] args) throws JSONException {
 		long l = 0L;
 		InformationListService test = new InformationListService();
@@ -31,7 +31,7 @@ public class InformationListService {
 		JSONArray data = new JSONArray();
 
 		String sql = "select user_id , parent_id ,  user_name  ,  age ,   email ,  url from  information where  parent_id = ?";
-
+		logger.info(sql);
 		Connection conn = DB.getConnection();
 
 		PreparedStatement pstmt = null;
@@ -98,7 +98,7 @@ public JSONArray getInformation( Long userId, Long  parentId) throws JSONExcepti
 		JSONArray data = new JSONArray();
 
 		String sql = "select user_id , parent_id ,  user_name  ,  age ,   email ,  url  from  information where  user_id != ?  and  parent_id = ?  ";
-
+		
 		Connection conn = DB.getConnection();
 
 		PreparedStatement pstmt = null;

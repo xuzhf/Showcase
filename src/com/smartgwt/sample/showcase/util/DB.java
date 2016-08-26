@@ -12,8 +12,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class DB {
+import org.slf4j.Logger;
 
+public class DB {
+	static Logger logger = JobLogFactory.createLogger(DB.class.getName());
+//	private static Logger logger = LogManager.getLogger(MyApp.class.getName());
+	//trace<debug<info<warn<error<fatal
 	/**
 	 * @param args
 	 */
@@ -49,7 +53,7 @@ public class DB {
 			String password = p.getProperty("jdbcPassword");
 			String server = p.getProperty("jdbcUrl", "jdbc:sqlserver://192.168.1.111:3175;databaseName=QjToba");
 			conn = DriverManager.getConnection(server, user, password);
-
+			logger.error("==================");
 			System.out.println(conn);
 
 		} catch (ClassNotFoundException e) {
@@ -59,7 +63,7 @@ public class DB {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+//		JobLogFactory.stop(DB.class.getName());
 		return conn;
 	}
 
@@ -118,4 +122,5 @@ public class DB {
 				e.printStackTrace();
 			}
 	}
+	
 }
